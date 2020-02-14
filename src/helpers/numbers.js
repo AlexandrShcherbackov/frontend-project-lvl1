@@ -17,4 +17,23 @@ const smallestIntDivisior = (numA, numB) => {
   return iter(numberB);
 };
 
-export { checkNumberIsEven, randomInt, smallestIntDivisior };
+const arifmeticalProgression = (start, depth, maxLength = 10) => {
+  const progression = [start];
+  const iter = (acc) => {
+    if (acc.length >= maxLength) {
+      return acc;
+    }
+
+    const newIndex = acc.length;
+    const newItem = start + newIndex * depth;
+    const newProgresion = [].concat(acc, newItem);
+
+    return iter(newProgresion);
+  };
+
+  return iter(progression);
+};
+
+export {
+  checkNumberIsEven, randomInt, smallestIntDivisior, arifmeticalProgression,
+};
