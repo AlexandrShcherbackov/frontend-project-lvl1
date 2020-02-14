@@ -34,6 +34,18 @@ const arifmeticalProgression = (start, depth, maxLength = 10) => {
   return iter(progression);
 };
 
+const isPrime = (number) => {
+  const iter = (divisor) => {
+    if (divisor === 1) {
+      return true;
+    }
+
+    return number % divisor !== 0 ? iter(divisor - 1) : false;
+  };
+
+  return iter(number - 1);
+};
+
 export {
-  checkNumberIsEven, randomInt, smallestIntDivisior, arifmeticalProgression,
+  checkNumberIsEven, randomInt, smallestIntDivisior, arifmeticalProgression, isPrime
 };

@@ -10,6 +10,7 @@
     "prepublishOnly": "npm run build"
   },
   "bin": {
+    "brain-prime": "dist/bin/brain-prime.js",
     "brain-nod": "dist/bin/brain-gcd.js",
     "brain-calc": "dist/bin/brain-calc.js",
     "brain-even": "dist/bin/brain-even.js",
