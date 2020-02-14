@@ -47,5 +47,5 @@ const isPrime = (number) => {
 };
 
 export {
-  checkNumberIsEven, randomInt, smallestIntDivisior, arifmeticalProgression, isPrime
+  checkNumberIsEven, randomInt, smallestIntDivisior, arifmeticalProgression, isPrime,
 };

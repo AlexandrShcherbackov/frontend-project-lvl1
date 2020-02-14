@@ -9,4 +9,4 @@ const primeData = () => {
   return [question, answer];
 };
 
-export default () => (brainGames(description, primeData))
+export default () => (brainGames(description, primeData));
